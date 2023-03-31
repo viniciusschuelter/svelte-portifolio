@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Elevator from "./Elevator.svelte";
+	import elevator from "../utils/elevator";
 
 </script>
 
@@ -52,9 +52,9 @@
     <div class="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
             <div class="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-                <Elevator from={0} to={25}>
-                    <dev class="w-3 h-3 rounded-full bg-secondary mb-1"></dev>
-                </Elevator>
+                <!-- <Elevator position={15}> -->
+                    <dev use:elevator={15} class="w-3 h-3 rounded-full bg-secondary mb-1"></dev>
+                <!-- </Elevator> -->
             </div>
         </a>
     </div>
