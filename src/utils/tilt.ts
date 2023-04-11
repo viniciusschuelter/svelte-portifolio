@@ -10,7 +10,7 @@ function getSettings(settings = {}): Settings {
 
 const TRANSITION_MS = 200;
 
-export default function tilt(node: HTMLElement, settingsObj: Settings): void {	
+export default function tilt(node: HTMLElement, settingsObj: Settings): any {	
 	const { width, height, left, top } = node.getBoundingClientRect();
 	let settings = getSettings(settingsObj);
 	let reverse = settings.reverse ? -1 : 1;

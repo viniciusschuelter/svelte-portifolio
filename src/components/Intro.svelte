@@ -29,7 +29,7 @@
 			</p>
 		</div>
 	</div>
-	<div
+	<!-- <div
         frameloop="demand"
         style="
             position: relative;
@@ -48,7 +48,7 @@
                 style="display: block; width: 997px; height: 937px"
             ></canvas>
         </div>
-    </div>
+    </div> -->
     <div class="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
             <div class="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
