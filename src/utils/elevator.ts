@@ -1,8 +1,28 @@
-import { spring } from "svelte/motion";
+import { spring, animate } from "motion";
 
 
-export default function elevator(node: HTMLElement, position= 0): void {
-    let tranlateY = spring(0, { damping:0, stiffness: 0.005 });
-	$: tranlateY.set(position);
-    tranlateY.subscribe((val) => node.style.transform = `translateY(${val}px) `)
+export default function elevator(node: HTMLElement, position = 0): void {
+    animate(node, { y: [0, 35, 0] }, { duration: 1.5, repeat: Infinity });
 }
+
+// export default function elevator(node: HTMLElement, position = 0): void {
+//     animate(node, { y: [0, 35, 0] }, { duration: 1.25, delay: 'delay' });
+// }
+// export const textVariant = (delay?: number) => {
+//     console.log('here')
+//       return {
+//         hidden: {
+//           y: -50,
+//           opacity: 0,
+//         },
+//         show: {
+//           y: 0,
+//           opacity: 1,
+//           transition: {
+//             type: "spring",
+//             duration: 1.25,
+//             delay: delay,
+//           },
+//         },
+//       };
+//     };

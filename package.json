@@ -34,6 +34,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@motionone/svelte": "^10.16.2",
+		"motion": "^10.16.2",
 		"svelte-motion": "^0.11.5"
 	}
 }
