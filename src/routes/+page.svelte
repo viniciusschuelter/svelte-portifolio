@@ -1,19 +1,17 @@
 <script>
 	import Intro from '../components/Intro.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import About from '../components/About.svelte';
 	import Work from '../components/Work.svelte';
+	import Section from '../components/Section.svelte';
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Svelte Portifolio</title>
+	<meta name="description" content="Svelte Portifolio" />
 </svelte:head>
 
-<Intro />
-<About />
-<Work />
+<Section Component={About} idName="about"></Section>
+<Section Component={Work} idName="work"></Section>
 
 <style>
 </style>

@@ -1,11 +1,7 @@
 export const textVariant = (delay?: number) => {
   console.log('here')
     return {
-      hidden: {
-        y: -50,
-        opacity: 0,
-      },
-      show: {
+      visible: {
         y: 0,
         opacity: 1,
         transition: {
@@ -14,7 +10,11 @@ export const textVariant = (delay?: number) => {
           delay: delay,
         },
       },
-    };
+      hidden: {
+        y: -50,
+        opacity: 0,
+      }
+    }
   };
   
   export const fadeIn = (direction: string, type: string, delay: number, duration: number) => {
@@ -76,12 +76,12 @@ export const textVariant = (delay?: number) => {
     };
   };
   
-  export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
+  export const staggerContainer = (staggerChildren?: any, delayChildren?: any) => {
     return {
-      hidden: {},
-      show: {
+      inactive: {},
+      active: {
         transition: {
-          staggerChildren: staggerChildren,
+          staggerChildren: staggerChildren || 0,
           delayChildren: delayChildren || 0,
         },
       },

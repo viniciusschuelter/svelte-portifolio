@@ -20,7 +20,7 @@ export const mainlySkills: { name: string, img: string}[] = [
     { name: 'Javascript Frameworks', img: '' },
 ];
 
-const workExperiences = [
+export const workExperiences = [
     {
       title: "React.js Developer",
       company_name: "Starbucks",
