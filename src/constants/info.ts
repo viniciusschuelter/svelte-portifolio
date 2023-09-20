@@ -20,10 +20,10 @@ export const mainlySkills: { name: string, img: string}[] = [
     { name: 'Javascript Frameworks', img: '' },
 ];
 
-export const workExperiences = [
+export const workExperiences: { title: string, companyName: string, icon: string, iconBg: string, date: string, points: string[]}[] = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
+      companyName: "Starbucks",
       icon: '',
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
@@ -36,7 +36,7 @@ export const workExperiences = [
     },
     {
       title: "React Native Developer",
-      company_name: "Tesla",
+      companyName: "Tesla",
       icon:  '',
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Feb 2022",
@@ -49,7 +49,7 @@ export const workExperiences = [
     },
     {
       title: "Web Developer",
-      company_name: "Shopify",
+      companyName: "Shopify",
       icon:  '',
       iconBg: "#383E56",
       date: "Jan 2022 - Jan 2023",
@@ -62,7 +62,7 @@ export const workExperiences = [
     },
     {
       title: "Full stack Developer",
-      company_name: "Meta",
+      companyName: "Meta",
       icon: '',
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",

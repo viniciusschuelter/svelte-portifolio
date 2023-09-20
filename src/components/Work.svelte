@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { workExperiences } from "../constants/info";
+	import { fadeIn, textVariant, zoomIn } from "../utils/motion";
 
 </script>
 
-<div style="opacity: 1; transform: none;">
+<div  use:textVariant style="opacity: 1; transform: none;">
 	<p class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
 		What I have done so far
 	</p>
@@ -14,16 +15,18 @@
 <div class="mt-20 flex flex-col">
 	<div class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
 		{#each workExperiences as experience}	
-			<div id="" class="vertical-timeline-element">
+			<div use:fadeIn id="" class="vertical-timeline-element">
 				<span
-					class="vertical-timeline-element-icon bounce-in"
+					use:zoomIn={0.1}
+					class="vertical-timeline-element-icon"
 					style="background: rgb(230, 222, 221);"
-					><div class="flex justify-center items-center w-full h-full">
-						<img src="/assets/meta-e386841a.png" class="w-[60%] h-[60%] object-contain" />
-					</div></span
-				>
+					>
+					<div class="flex justify-center items-center w-full h-full">
+						<img src="/lib/github.svg" class="w-[60%] h-[60%] object-contain" />
+					</div>
+				</span>
 				<div
-					class="vertical-timeline-element-content bounce-in"
+					class="vertical-timeline-element-content"
 					style="background: rgb(29, 24, 54); color: rgb(255, 255, 255);"
 				>
 					<div
@@ -41,7 +44,7 @@
 							</li>
 						{/each}
 					</ul>
-					<span class="vertical-timeline-element-date">{ experience.date }</span>
+					<span use:fadeIn={0.75} class="vertical-timeline-element-date">{ experience.date }</span>
 				</div>
 			</div>
 		{/each}
