@@ -1,4 +1,5 @@
 <script lang="ts">
+
 	export let Component: any;
 	export let idName: string;
 

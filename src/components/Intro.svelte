@@ -1,6 +1,8 @@
 <script lang="ts">
+	import { Canvas } from "@threlte/core";
 	import { personalInfo } from "../constants/info";
 	import elevator from "../utils/elevator";
+	import Computer from "../canvas/Computer.svelte";
 
 </script>
 
@@ -27,6 +29,10 @@
 		</div>
 	</div>
     
+	<Canvas	>
+		<Computer />
+	</Canvas>
+
     <div class="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
             <div class="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
