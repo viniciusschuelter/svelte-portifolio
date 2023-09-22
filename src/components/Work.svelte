@@ -22,7 +22,7 @@
 					style="background: rgb(230, 222, 221);"
 					>
 					<div class="flex justify-center items-center w-full h-full">
-						<img src="/lib/github.svg" class="w-[60%] h-[60%] object-contain" />
+						<img src="{experience.img}" class="rounded-full object-contain" />
 					</div>
 				</span>
 				<div

@@ -2,6 +2,7 @@
 	import About from '../components/About.svelte';
 	import Work from '../components/Work.svelte';
 	import Section from '../components/Section.svelte';
+	import Stack from '../components/Stack.svelte';
 </script>
 
 <svelte:head>
@@ -11,7 +12,7 @@
 
 <Section Component={About} idName="about"></Section>
 <Section Component={Work} idName="work"></Section>
-
+<Stack />
 
 <style>
 </style>
