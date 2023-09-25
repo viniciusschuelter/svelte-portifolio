@@ -19,7 +19,7 @@ Title: Day 56 - 1 Scan A Day - Workstation
   
   export const ref = new Group()
 
-  const gltf = useGltf('src/lib/scenes/pc/scene-transformed.glb', { useDraco: true })
+  const gltf = useGltf('static/pc.glb', { useDraco: true })
 
   const component = forwardEventHandlers();
 </script>

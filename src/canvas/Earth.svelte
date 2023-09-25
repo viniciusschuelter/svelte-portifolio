@@ -5,7 +5,7 @@
   
     export const ref = new Group()
   
-    const gltf = useGltf('src/lib/scenes/planet/scene-transformed.glb', { useDraco: true })
+    const gltf = useGltf('static/earth.glb', { useDraco: true })
     export const { actions, mixer } = useGltfAnimations(gltf, ref)
   
     const component = forwardEventHandlers()
