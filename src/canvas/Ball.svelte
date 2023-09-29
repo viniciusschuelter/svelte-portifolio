@@ -3,6 +3,7 @@
     import { DecalGeometry } from "three/examples/jsm/geometries/DecalGeometry";
 	import { useTexture, Float } from '@threlte/extras';
     import * as THREE from "three";
+    import Decal  from './Decal.svelte'
 
     export let decal: any = null;
     let mesh: any;
@@ -48,20 +49,20 @@
             flatShading
         />
         {#await texture then img}
-        {createDecal(img)}
-            <!-- <T.MeshPhongMaterial
-                flatShading
-                depthWrite={false}
-                transparent={true}
-                polygonOffset={true}
-                polygonOffsetFactor={-4}
-                map={img}
-                on:create={({ ref }) => {
-                  material = ref;
-                  createDecal(img)
-                  console.log(ref);
-                }}
-            /> -->
-        {/await}
+            <Decal {mesh} {img} />
+                <!-- <T.MeshPhongMaterial
+                    flatShading
+                    depthWrite={false}
+                    transparent={true}
+                    polygonOffset={true}
+                    polygonOffsetFactor={-4}
+                    map={img}
+                    on:create={({ ref }) => {
+                    material = ref;
+                    createDecal(img)
+                    console.log(ref);
+                    }}
+                /> -->
+            {/await}
     </T.Mesh>
 </Float>

@@ -1,30 +1,57 @@
 <script lang="ts">
-    import { DecalGeometry } from 'three/addons/geometries/DecalGeometry.js';
-    import { T } from '@threlte/core'
-    import * as THREE from 'three'
+  // import { DecalGeometry } from "three-stdlib";
+  import { DecalGeometry } from "three/examples/jsm/geometries/DecalGeometry";
+  import { T } from '@threlte/core'
+  import * as THREE from 'three'
+	import { onMount } from 'svelte';
+	// import { useTexture } from "@threlte/extras";
 
     export let mesh: any;
+    export let img: any = null;
 
-    const textureLoader = new THREE.TextureLoader()
-    const decal = textureLoader.load('/favicon.png')
-    const decalMat = new THREE.MeshPhongMaterial({
+    let ref: any;
+
+    let decalMat: any;
+
+    // const textureLoader = new THREE.TextureLoader()
+    // const decal = textureLoader.load(img)
+    // const texture = useTexture(img);
+    
+    decalMat = new THREE.MeshNormalMaterial({
       depthWrite: false,
       polygonOffset: true, //Without this the polygons are overlapping the target and causing artifacts
       polygonOffsetFactor: -4,
-      map: decal,
+      normalMap: img,
       transparent: true //if the decal is a png with transparency this is needed
     })
 
-    export function addDecal(position: any, rotation: any;) {
-      const material = decalMat.clone()
-      const size = new THREE.Vector3(1, 1, 1)
-      const m = new THREE.Mesh(new DecalGeometry(mesh, position, rotation, size), material)
-      m.renderOrder = decals.length // give decals a fixed render order
-      decals = decals.concat([m])
+    onMount(() => {
+      const position = new THREE.Vector3(0, 0, 1);
+      const rotation = new THREE.Euler(2 * Math.PI, 0, 6.25);
+      const size = new THREE.Vector3(2, 2, 2);
+      decalMat.geometry = new DecalGeometry(mesh, position, rotation, size);
+      console.log(decalMat)
+    })
+    
+    function createDecal(ref: any): void {
+      // console.log(ref)
+      // const position = new THREE.Vector3(0, 0, 1);
+      // const rotation = new THREE.Euler(2 * Math.PI, 0, 6.25);
+      // const size = new THREE.Vector3(1, 1, 1);
+      // ref.geometry = new DecalGeometry(mesh, position, rotation, size);
     }
-
-    let decals: any[] = []
   </script>
-  {#each decals as decal}
-    <T.Mesh is={decal} />
-  {/each}
+
+
+<T.Mesh is={decalMat} />
+
+  <!-- <T.MeshNormalMaterial
+    ref={ref}
+    flatShading
+    depthWrite={false}
+    transparent={true}
+    polygonOffset={true}
+    polygonOffsetFactor={-4}
+    normalMap={img}
+    on:create={({ ref }) => createDecal(ref)}
+/> -->
