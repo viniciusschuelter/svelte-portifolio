@@ -2,6 +2,7 @@
 	import logo from '../lib/images/svelte-logo.svg';
 	import { personalInfo } from '../constants/info';
 	import { navLinks } from '../constants/general';
+	import menu from '../lib/icons/menu.svg';
 	
 	
 </script>
@@ -24,7 +25,7 @@
 				{/each}
 			</ul>
 			<div class="sm:hidden flex flex-1 justify-end items-center">
-				<img src="/assets/menu-242d80a8.svg" alt="menu" class="w-[28px] h-[28px] object-contain cursor-pointer" />
+				<img src={menu} alt="menu" class="w-[28px] h-[28px] object-contain cursor-pointer" />
 				<div class="hidden p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl">
 					<ul class="list-none flex justify-end items-start flex-col gap-4">
 						{#each navLinks as link}

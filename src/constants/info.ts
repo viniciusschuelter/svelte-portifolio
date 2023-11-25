@@ -13,7 +13,7 @@ import typescript from '../lib/icons/typescript.png';
 import threejs from '../lib/icons/threejs.svg';
 
 
-export const personalInfo: { name: string, fullName: string, occupation: string, bio: string, overview: string } = {
+export const personalInfo: { name: string, fullName: string, occupation: string, bio: string, overview: string, projectsOverview: string } = {
     name: 'Vinicius',
     fullName: 'Vinicius Schuelter',
     occupation: 'Sofware Engineer',
@@ -22,7 +22,12 @@ export const personalInfo: { name: string, fullName: string, occupation: string,
     Angular and have professional experience working with Typescript, RxJs, NgRx, Css and Html. I
     also have knowledge to work with Vue, React, or any framework JS based. I'm a quick learner and
     collaborate closely with clients to create efficient, scalable, and user-friendly solutions that
-    solve real-world problems.`
+    solve real-world problems.`,
+    projectsOverview: `Following projects showcases my skills and experience through
+    real-world examples of my work. Each project is briefly described with
+    links to code repositories and live demos in it. It reflects my
+    ability to solve complex problems, work with different technologies,
+    and manage projects effectively.`
 } 
 
 export const mainlySkills: { name: string, img: string}[] = [
@@ -52,7 +57,7 @@ export const workExperiences: { title: string, companyName: string, img: string,
   },
   {
     title: 'Senior Frontend Engineer',
-    companyName: 'Tesla',
+    companyName: 'Feracode',
     img:  'https://media.licdn.com/dms/image/C4D0BAQGZvWx-LS7jAA/company-logo_100_100/0/1611608048115?e=1703721600&v=beta&t=81s759cTsee3ln-zsbeiKInlW8vYh5dfNKthdCcdJHg',
     date: 'Feb 2019 - May 2022 · 3 yrs 4 mos',
     points: [
@@ -157,3 +162,68 @@ export const stacks: { name: string; icon: string }[] = [
     icon: docker,
   },
 ];
+
+export const workedProjects: { name: string, description: string, tags: {name: string, color: string }[], image: string, projectLink: string }[] = [
+  {
+  name: 'Car Rent',
+  description:'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+  tags: [
+    {
+      name: 'react',
+      color: 'blue-text-gradient',
+    },
+    {
+      name: 'mongodb',
+      color: 'green-text-gradient',
+    },
+    {
+      name: 'tailwind',
+      color: 'pink-text-gradient',
+    },
+  ],
+  image: '',
+  projectLink: 'https://github.com/',
+},
+{
+  name: 'Job IT',
+  description:
+    'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+  tags: [
+    {
+      name: 'react',
+      color: 'blue-text-gradient',
+    },
+    {
+      name: 'restapi',
+      color: 'green-text-gradient',
+    },
+    {
+      name: 'scss',
+      color: 'pink-text-gradient',
+    },
+  ],
+  image: '',
+  projectLink: 'https://github.com/',
+},
+{
+  name: 'Trip Guide',
+  description:
+    'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+  tags: [
+    {
+      name: 'nextjs',
+      color: 'blue-text-gradient',
+    },
+    {
+      name: 'supabase',
+      color: 'green-text-gradient',
+    },
+    {
+      name: 'css',
+      color: 'pink-text-gradient',
+    },
+  ],
+  image: '',
+  projectLink: 'https://github.com/',
+},
+]

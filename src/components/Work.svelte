@@ -4,7 +4,7 @@
 
 </script>
 
-<div  use:textVariant style="opacity: 1; transform: none;">
+<div use:textVariant style="opacity: 1; transform: none;">
 	<p class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
 		What I have done so far
 	</p>

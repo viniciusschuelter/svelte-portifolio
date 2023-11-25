@@ -3,7 +3,7 @@
 	import { mainlySkills, personalInfo } from '../constants/info';
 	import { textVariant, fadeIn } from '../utils/motion';
 
-	const initialSettings = { scale: 1.1, reverse: false };
+	const initialSettings = { scale: 1.2, reverse: false };
 
 	function fadeInSkill(index: number): any {
 		return ['right', index * 0.5, 0.75 ] 
