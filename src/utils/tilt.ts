@@ -20,7 +20,7 @@ export default function tilt(node: HTMLElement, settingsObj: Settings): any {
 		
 		function onMouseMove(e: MouseEvent) {
 			const percX = (e.clientX - left) / width;
-			const percY = (e.clientY - top) / height;
+			const percY = (e.clientY - (top <= 400 ? top : 400)) / height;
 			
 			const { max, scale } = settings;
 			const twiceMax = max! * 2;

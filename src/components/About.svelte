@@ -4,10 +4,6 @@
 	import { textVariant, fadeIn } from '../utils/motion';
 
 	const initialSettings = { scale: 1.2, reverse: false };
-
-	function fadeInSkill(index: number): any {
-		return ['right', index * 0.5, 0.75 ] 
-	}
 </script>
 
 <div use:textVariant>
@@ -27,7 +23,7 @@
 	{#each mainlySkills as skill, index}
 		<div class="xs:w-[250px]" use:tilt={initialSettings}>
 			<div
-				use:fadeIn={index * 0.5}
+				use:fadeIn={{delay: index * 0.5, duration: 1, direction: 'right'}}
 				class="w-full orange-pink-gradient p-[1px] rounded-[20px] shadow-card"
 				style="opacity: 1; transform: none"
 			>

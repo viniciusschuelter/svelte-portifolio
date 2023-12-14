@@ -4,11 +4,11 @@
 	import { navLinks } from '../constants/general';
 	import menu from '../lib/icons/menu.svg';
 	
-	
+	let y = 0
 </script>
 
 <header>
-	<nav class="sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-primary">
+	<nav class="sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 { y >= 100 ? "bg-primary" : "bg-transparent" }">
 		<div class="w-full flex justify-between items-center max-w-7xl mx-auto">
 			<a class="flex items-center gap-2" href="/">
 				<img class="w-[2rem]" src={logo} alt="SvelteKit" />
@@ -40,5 +40,6 @@
 	</nav>
 </header>
 
+<svelte:window bind:scrollY={y} />
 <style>
 </style>

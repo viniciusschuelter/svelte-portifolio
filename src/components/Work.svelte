@@ -2,6 +2,9 @@
 	import { workExperiences } from "../constants/info";
 	import { fadeIn, textVariant, zoomIn } from "../utils/motion";
 
+	let delay: number = 0.1
+	let duration: number = 1
+	let direction = (index: number) => index % 2 === 0 ? 'right' : 'left'
 </script>
 
 <div use:textVariant style="opacity: 1; transform: none;">
@@ -14,8 +17,8 @@
 </div>
 <div class="mt-20 flex flex-col">
 	<div class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
-		{#each workExperiences as experience}	
-			<div use:fadeIn id="" class="vertical-timeline-element">
+		{#each workExperiences as experience, index}	
+			<div use:fadeIn={{ delay, duration,  direction: direction(index) }} id="" class="vertical-timeline-element">
 				<span
 					use:zoomIn={0.1}
 					class="vertical-timeline-element-icon"
@@ -38,13 +41,13 @@
 						<p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">{ experience.companyName }</p>
 					</div>
 					<ul class="mt-5 list-disc ml-5 space-y-2">
-						{#each experience.points as point}	
+						{#each experience.points as point, index}	
 							<li class="text-white-100 text-[14px] pl-1 tracking-wider">
 								{ point }
 							</li>
 						{/each}
 					</ul>
-					<span use:fadeIn={0.75} class="vertical-timeline-element-date">{ experience.date }</span>
+					<span use:fadeIn={{delay: 0.75, duration: 1, direction: direction(index + 1)}} class="vertical-timeline-element-date">{ experience.date }</span>
 				</div>
 			</div>
 		{/each}

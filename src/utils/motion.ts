@@ -8,13 +8,13 @@ export function textVariant(node: HTMLElement, delay = 0.1): void {
   animate(node, { y: -70, opacity: 0 });
 };
 
-export function fadeIn(node: HTMLElement, delay: number = 0.1, duration: number = 1, direction: string = 'right'): any {
+export function fadeIn(node: HTMLElement, options = { delay: 0.1, duration: 1, direction: 'right'} ): any {
   inView(node, ({ target }) => {
-    animate(node, { x: 0, y: 0, opacity: 1 }, { delay: delay, duration: duration });
+    animate(node, { x: 0, y: 0, opacity: 1 }, { delay: options.delay, duration: options.duration });
   });
   animate(node, {
-    x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-    y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+    x: options.direction === "left" ? 100 : options.direction === "right" ? -100 : 0,
+    y: options.direction === "up" ? 100 : options.direction === "down" ? -100 : 0,
     opacity: 0}
   );
 };
