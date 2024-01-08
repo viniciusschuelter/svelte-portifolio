@@ -3,6 +3,7 @@
 	import { fadeIn, textVariant } from '../utils/motion';
 	import tilt from '../utils/tilt';
 	import github from '../lib/images/github.svg';
+	import link from '../lib/images/link.svg';
 
 	const initialSettings = { scale: 1.05, reverse: false };
 </script>
@@ -34,9 +35,9 @@
 					<div class="absolute inset-0 flex justify-end m-3 card-img_hover">
 						<div
 							on:click={() => window.open(project.projectLink, '_blank')}
-							class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+							class="gray-bg-opacity w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
 						>
-							<img src={github} alt="source code" class="w-1/2 h-1/2 object-contain" />
+							<img src={link} alt="source code" class="w-1/2 h-1/2 object-contain" />
 						</div>
 					</div>
 				</div>

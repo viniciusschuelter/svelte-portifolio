@@ -165,65 +165,65 @@ export const stacks: { name: string; icon: string }[] = [
 
 export const workedProjects: { name: string, description: string, tags: {name: string, color: string }[], image: string, projectLink: string }[] = [
   {
-  name: 'Car Rent',
-  description:'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+  name: 'Zellim',
+  description:'Powerfull Webapp, the main slogan is "All the tools you need to communicate and collaborate in an easy-to-u".',
   tags: [
     {
-      name: 'react',
+      name: 'angular',
       color: 'blue-text-gradient',
     },
     {
-      name: 'mongodb',
+      name: 'node',
       color: 'green-text-gradient',
     },
     {
-      name: 'tailwind',
+      name: 'bootstrap',
       color: 'pink-text-gradient',
     },
   ],
-  image: '',
-  projectLink: 'https://github.com/',
+  image: './src/lib/images/zellim.png',
+  projectLink: 'https://www.zellim.com/',
 },
 {
-  name: 'Job IT',
+  name: 'Onelog',
   description:
-    'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+    'A simple and fast Web application that has arrived to facilitate the entire delivery process, bringing more autonomy and agility in everyday life.',
   tags: [
     {
-      name: 'react',
+      name: 'angular',
       color: 'blue-text-gradient',
     },
     {
-      name: 'restapi',
+      name: '.net',
       color: 'green-text-gradient',
     },
     {
-      name: 'scss',
+      name: 'material',
       color: 'pink-text-gradient',
     },
   ],
-  image: '',
-  projectLink: 'https://github.com/',
+  image: './src/lib/images/onelog-brf.png',
+  projectLink: 'https://onelog.brf.com/login',
 },
 {
-  name: 'Trip Guide',
+  name: 'Shellbox',
   description:
-    'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    'Fueling your vehicle or purchasing from Shell Select just got faster, easier and safer! Shell Box is app for you to pay without having to leave your car.',
   tags: [
     {
-      name: 'nextjs',
+      name: 'node.js',
       color: 'blue-text-gradient',
     },
     {
-      name: 'supabase',
+      name: 'aws',
       color: 'green-text-gradient',
     },
     {
-      name: 'css',
+      name: 'serveless',
       color: 'pink-text-gradient',
     },
   ],
-  image: '',
-  projectLink: 'https://github.com/',
+  image: './src/lib/images/shellbox.png',
+  projectLink: 'https://promo.shell.com.br/shellbox/',
 },
 ]

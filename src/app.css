@@ -1389,6 +1389,10 @@ img,video {
     background: linear-gradient(to right,#434343,#000000)
 }
 
+.gray-bg-opacity {
+    background: rgba(150, 150, 150, 0.5);
+}
+
 .orange-gradient {
     background: #fe5938;
     background: linear-gradient(-90deg,#fe5938 0%,rgba(60,51,80,0) 100%);
