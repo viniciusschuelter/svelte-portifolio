@@ -4,6 +4,7 @@
 	import Section from '../components/Section.svelte';
 	import Stack from '../components/Stack.svelte';
 	import Project from '../components/Project.svelte';
+	import Study from '../components/Study.svelte';
 </script>
 
 <svelte:head>
@@ -15,6 +16,7 @@
 <Section Component={Work} idName="work"></Section>
 <Stack />
 <Section Component={Project} idName="project"></Section>
+<Section Component={Study} idName="study"></Section>
 
 <style>
 </style>

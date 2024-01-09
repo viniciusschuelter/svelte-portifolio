@@ -1,14 +1,14 @@
 <script lang="ts">
-	import { personalInfo, workedProjects } from '../constants/info';
+	import { personalInfo, studyProjects } from '../constants/info';
 	import { fadeIn, textVariant } from '../utils/motion';
 	import tilt from '../utils/tilt';
-	import link from '../lib/images/link.svg';
+	import github from '../lib/images/github.svg';
 
 	const initialSettings = { scale: 1.05, reverse: false };
 </script>
 
 <div use:textVariant style="opacity: 1; transform: none;">
-	<p class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">My work</p>
+	<p class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">My study</p>
 	<h2 class="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
 		Projects.
 	</h2>
@@ -21,7 +21,7 @@
 	{@html personalInfo.projectsOverview}
 </p>
 <div class="mt-20 flex flex-wrap gap-7">
-	{#each workedProjects as project}
+	{#each studyProjects as project}
 		<div>
 			<div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full" use:tilt={initialSettings}>
 				<div class="relative w-full h-[230px]">
@@ -36,7 +36,7 @@
 							on:click={() => window.open(project.projectLink, '_blank')}
 							class="gray-bg-opacity w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
 						>
-							<img src={link} alt="source code" class="w-1/2 h-1/2 object-contain" />
+							<img src={github} alt="source code" class="w-1/2 h-1/2 object-contain" />
 						</div>
 					</div>
 				</div>

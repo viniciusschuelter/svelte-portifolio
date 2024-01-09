@@ -165,65 +165,188 @@ export const stacks: { name: string; icon: string }[] = [
 
 export const workedProjects: { name: string, description: string, tags: {name: string, color: string }[], image: string, projectLink: string }[] = [
   {
-  name: 'Zellim',
-  description:'Powerfull Webapp, the main slogan is "All the tools you need to communicate and collaborate in an easy-to-u".',
+    name: 'Zellim',
+    description:'Powerfull Webapp, the main slogan is "All the tools you need to communicate and collaborate in an easy-to-u".',
+    tags: [
+      {
+        name: 'angular',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'node',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'bootstrap',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: './src/lib/images/zellim.png',
+    projectLink: 'https://www.zellim.com/',
+  },
+  {
+    name: 'Onelog',
+    description:
+      'A simple and fast Web application that has arrived to facilitate the entire delivery process, bringing more autonomy and agility in everyday life.',
+    tags: [
+      {
+        name: 'angular',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: '.net',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'material',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: './src/lib/images/onelog-brf.png',
+    projectLink: 'https://onelog.brf.com/login',
+  },
+  {
+    name: 'Shellbox',
+    description:
+      'Fueling your vehicle or purchasing from Shell Select just got faster, easier and safer! Shell Box is app for you to pay without having to leave your car.',
+    tags: [
+      {
+        name: 'node.js',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'aws',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'serveless',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: './src/lib/images/shellbox.png',
+    projectLink: 'https://promo.shell.com.br/shellbox/',
+  },
+]
+
+export const studyProjects: { name: string, description: string, tags: {name: string, color: string }[], image: string, projectLink: string }[] = [
+  {
+    name: 'Fun with Pokeapi',
+    description:'Studying and having fun coding a Angular project with PokeAPI.',
+    tags: [
+      {
+        name: 'angular',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'firebase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'bootstrap',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: './src/lib/images/pokeapi.jpg',
+    projectLink: 'https://github.com/viniciusschuelter/fun-with-pokemon-api-angular',
+  },
+  {
+    name: 'Playground Angular Signal',
+    description: 'Studying and having fun coding a Angular project with new Signal feature.',
+    tags: [
+      {
+        name: 'angular',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'signal',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'rxjs',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: './src/lib/images/signals.jpg',
+    projectLink: 'https://github.com/viniciusschuelter/playground-angular-signal',
+  },
+  {
+    name: 'Dimension C-137',
+    description: 'Studying and having fun coding a Vue project with Rick and Morty API.',
+    tags: [
+      {
+        name: 'vue',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'aws',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'serveless',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: './src/lib/images/dimension-C137.jpg',
+    projectLink: 'https://github.com/viniciusschuelter/dimension-c-137',
+  },
+  {
+  name: 'Free to Play Astro',
+  description: 'Studying and having fun coding a Astro project with Free to play API',
   tags: [
     {
-      name: 'angular',
+      name: 'astro',
       color: 'blue-text-gradient',
     },
     {
-      name: 'node',
+      name: 'js frameworks',
       color: 'green-text-gradient',
     },
     {
-      name: 'bootstrap',
+      name: 'public api',
       color: 'pink-text-gradient',
     },
   ],
-  image: './src/lib/images/zellim.png',
-  projectLink: 'https://www.zellim.com/',
-},
-{
-  name: 'Onelog',
-  description:
-    'A simple and fast Web application that has arrived to facilitate the entire delivery process, bringing more autonomy and agility in everyday life.',
+  image: './src/lib/images/free-to-play.jpg',
+  projectLink: 'https://github.com/viniciusschuelter/free-to-play-astro',
+  },
+  {
+  name: 'React Skateshop VR',
+  description:'Studying and having fun coding a React project with Three.js',
   tags: [
     {
-      name: 'angular',
+      name: 'react',
       color: 'blue-text-gradient',
     },
     {
-      name: '.net',
+      name: 'three.js',
       color: 'green-text-gradient',
     },
     {
-      name: 'material',
+      name: 'vr',
       color: 'pink-text-gradient',
     },
   ],
-  image: './src/lib/images/onelog-brf.png',
-  projectLink: 'https://onelog.brf.com/login',
-},
-{
-  name: 'Shellbox',
-  description:
-    'Fueling your vehicle or purchasing from Shell Select just got faster, easier and safer! Shell Box is app for you to pay without having to leave your car.',
+  image: './src/lib/images/skateshop-vr.jpg',
+  projectLink: 'https://github.com/viniciusschuelter/react-skateboard-vr',
+  },
+  {
+  name: 'Superheroes Flutter',
+  description: 'Studying and having fun coding a React project with Three.js',
   tags: [
     {
-      name: 'node.js',
+      name: 'flutter',
       color: 'blue-text-gradient',
     },
     {
-      name: 'aws',
+      name: 'dart',
       color: 'green-text-gradient',
     },
     {
-      name: 'serveless',
+      name: 'marvel api',
       color: 'pink-text-gradient',
     },
   ],
-  image: './src/lib/images/shellbox.png',
-  projectLink: 'https://promo.shell.com.br/shellbox/',
-},
+  image: './src/lib/images/superheroes.jpg',
+  projectLink: 'https://github.com/viniciusschuelter/superheroes',
+  }
 ]
