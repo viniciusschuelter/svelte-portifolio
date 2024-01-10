@@ -18,7 +18,7 @@
 	class="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
 	style="opacity: 1; transform: none"
 >
-	{@html personalInfo.projectsOverview}
+	{@html personalInfo.studyOverview}
 </p>
 <div class="mt-20 flex flex-wrap gap-7">
 	{#each studyProjects as project}

@@ -13,7 +13,7 @@ import typescript from '../lib/icons/typescript.png';
 import threejs from '../lib/icons/threejs.svg';
 
 
-export const personalInfo: { name: string, fullName: string, occupation: string, bio: string, overview: string, projectsOverview: string } = {
+export const personalInfo: { name: string, fullName: string, occupation: string, bio: string, overview: string, projectsOverview: string, studyOverview: string  } = {
     name: 'Vinicius',
     fullName: 'Vinicius Schuelter',
     occupation: 'Sofware Engineer',
@@ -23,8 +23,11 @@ export const personalInfo: { name: string, fullName: string, occupation: string,
     also have knowledge to work with Vue, React, or any framework JS based. I'm a quick learner and
     collaborate closely with clients to create efficient, scalable, and user-friendly solutions that
     solve real-world problems.`,
-    projectsOverview: `Following projects showcases my skills and experience through
+    projectsOverview: ` The Following projects showcases my skills and experience through
     real-world examples of my work. Each project is briefly described with
+    links to the home page.`,
+    studyOverview: `The following repositories show my knowledge through study projects 
+    I created. Each project is briefly described with
     links to code repositories and live demos in it. It reflects my
     ability to solve complex problems, work with different technologies,
     and manage projects effectively.`
@@ -40,9 +43,23 @@ export const mainlySkills: { name: string, img: string}[] = [
 
 export const workExperiences: { title: string, companyName: string, img: string, date: string, points: string[]}[] = [
   {
+    title: 'Senior Fullstack Developer(heavy backend)',
+    companyName: 'AP Digital Services',
+    img: './src/lib/images/ap.jpg',
+    date: 'Oct 2022 - Present',
+    points: [
+      'AP Digital Services was born in 2015 with the concern and desire to put theto be human as a central point ofexperiences digital. One of our biggest motivations is the transformation of our clients businesses, through technology and incredible people;',
+      'Allocated in the Raizen/Shell, development and maintenance of AWS serveles;s',
+      'Developing and maintaining AWS lambda`s using mainly Node.js, dynamoDB, MySQL and terraform pipeline;',
+      'Collaborating with cross-functional teams, product managers, and other developers to create high-quality products;',
+      'Participating in code reviews and providing constructive feedback to other developers;',
+      'Skills: Node.js · AWS · Typscript · Serveless · Terraform · DynamoDB · MySQL · Redis ',
+    ],
+  },
+  {
     title: 'Senior Software Engineer',
     companyName: 'Texo IT',
-    img: 'https://media.licdn.com/dms/image/C560BAQF7RGUDJfRzCw/company-logo_100_100/0/1648757860867?e=1703721600&v=beta&t=ogdLwj8hENmv8QK72n4Lbb9GL24taX938H1fic3V3Ac',
+    img: './src/lib/images/texo-it.jpg',
     date: 'May 2022 - Jul 2023 · 1 yr 3 mos',
     points: [
       'Texo IT is an outsourcing company specialized in software development. formed by specialists in software engineering, working in all phases of the development cycle, with a strong focus on highly complex projects.',
@@ -58,7 +75,7 @@ export const workExperiences: { title: string, companyName: string, img: string,
   {
     title: 'Senior Frontend Engineer',
     companyName: 'Feracode',
-    img:  'https://media.licdn.com/dms/image/C4D0BAQGZvWx-LS7jAA/company-logo_100_100/0/1611608048115?e=1703721600&v=beta&t=81s759cTsee3ln-zsbeiKInlW8vYh5dfNKthdCcdJHg',
+    img: './src/lib/images/feracode.png',
     date: 'Feb 2019 - May 2022 · 3 yrs 4 mos',
     points: [
       'Feracode are a software and web developer house. We design solutions for the client increase his revenue and the scalability of his business through custom apps. The mission is to connect the world with the best brands and update the standard of online technology',
@@ -74,9 +91,9 @@ export const workExperiences: { title: string, companyName: string, img: string,
     ],
   },
   {
-    title: 'Senior Fullstack Developer',
+    title: 'Senior Fullstack Developer(heavy frontend)',
     companyName: 'TIVIT',
-    img:  'https://media.licdn.com/dms/image/C4E0BAQGabNv-OuPDTA/company-logo_100_100/0/1638373049053?e=1703721600&v=beta&t=T7JtsknlaNgFhekxxNVRbUcpdkoPJPbfcLLl76x13XI',
+    img: './src/lib/images/tivit.jpg',
     date: 'May 2021 - Dec 2021 · 8 mos',
     points: [
       'TIVIT is a Brazilian multinational and technology one-stop-shop, present in the market since 1998 and with operations in ten countries in Latin America. The company offers diverse services such as agile software development, hybrid and public cloud, cybersecurity, highly complex operations, among others, which support customers on their digital transformation journey.',
@@ -89,9 +106,9 @@ export const workExperiences: { title: string, companyName: string, img: string,
     ],
   },
   {
-    title: 'Senior Software Engineer',
+    title: 'Software Engineer',
     companyName: 'Sysmar Informática LTDA',
-    img: 'https://media.licdn.com/dms/image/C4D0BAQEAZGbWkPy1hA/company-logo_100_100/0/1626891533269?e=1703721600&v=beta&t=M9NThWw5G9Y-qltwR1UnPyJ5o2h3kFckscxfQ1zAuMo',
+    img: './src/lib/images/sysmar.jpg',
     date: 'Mar 2014 - Mar 2019 · 5 yrs 1 mo',
     points: [
       'IT company that provides integrated ICT (Information and Communication Technology) solutions for Public Management, developing innovations in practices and technologies.',
