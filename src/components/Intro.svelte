@@ -28,10 +28,11 @@
 			</p>
 		</div>
 	</div>
-    
-	<!-- <Canvas	>
-		<Computer />
-	</Canvas> -->
+
+		<Canvas	>
+			<Computer />
+		</Canvas>
+	<!-- </div> -->
 
     <div class="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
