@@ -46,7 +46,7 @@ export const workExperiences: { title: string, companyName: string, img: string,
     title: 'Senior Fullstack Developer(heavy backend)',
     companyName: 'AP Digital Services',
     img: './src/lib/images/ap.jpg',
-    date: 'Oct 2022 - Present',
+    date: 'Oct 2023 - Present',
     points: [
       'AP Digital Services was born in 2015 with the concern and desire to put theto be human as a central point ofexperiences digital. One of our biggest motivations is the transformation of our clients businesses, through technology and incredible people;',
       'Allocated in the Raizen/Shell, development and maintenance of AWS serveles;s',
