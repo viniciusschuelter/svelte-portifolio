@@ -2,6 +2,12 @@
 	import tilt from '../utils/tilt';
 	import { mainlySkills, personalInfo } from '../constants/info';
 	import { textVariant, fadeIn } from '../utils/motion';
+	import image1 from '../lib/images/0.png';
+	import image2 from '../lib/images/1.png';
+	import image3 from '../lib/images/2.png';
+	import image4 from '../lib/images/3.png';
+
+	const images = [image1, image2, image3, image4]
 
 	const initialSettings = { scale: 1.2, reverse: false };
 </script>
@@ -30,7 +36,8 @@
 				<div
 					class="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
 				>
-					<img src="./src/lib/images/{index % 4}.png" alt="Web Developer" class="w-16 h-16 object-contain" />
+					<!-- svelte-ignore a11y-img-redundant-alt -->
+					<img src={images[index]} alt="image skills" class="w-16 h-16 object-contain" />
 					<h3 class="text-white text-[20px] font-bold text-center">{skill.name}</h3>
 				</div>
 			</div>

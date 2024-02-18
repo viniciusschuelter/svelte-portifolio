@@ -11,6 +11,20 @@ import redux from '../lib/icons/redux.png';
 import tailwind from '../lib/icons/tailwind.png';
 import typescript from '../lib/icons/typescript.png';
 import threejs from '../lib/icons/threejs.svg';
+import ap from '../lib/images/ap.jpg'
+import texo from '../lib/images/texo-it.jpg'
+import feracode from '../lib/images/feracode.png'
+import tivit from '../lib/images/tivit.jpg'
+import sysmar from '../lib/images/sysmar.jpg'
+import zellim from '../lib/images/zellim.png'
+import onelog from '../lib/images/onelog-brf.png'
+import shellbox from '../lib/images/shellbox.png'
+import pokeapi from '../lib/images/pokeapi.jpg'
+import signals from '../lib/images/signals.jpg'
+import dc137 from '../lib/images/dimension-C137.jpg'
+import freetoplay from '../lib/images/free-to-play.jpg'
+import skateshop from '../lib/images/skateshop-vr.jpg'
+import superheroes from '../lib/images/superheroes.jpg'
 
 
 export const personalInfo: { name: string, fullName: string, occupation: string, bio: string, overview: string, projectsOverview: string, studyOverview: string  } = {
@@ -45,7 +59,7 @@ export const workExperiences: { title: string, companyName: string, img: string,
   {
     title: 'Senior Fullstack Developer(heavy backend)',
     companyName: 'AP Digital Services',
-    img: './src/lib/images/ap.jpg',
+    img: ap,
     date: 'Oct 2023 - Present',
     points: [
       'AP Digital Services was born in 2015 with the concern and desire to put theto be human as a central point ofexperiences digital. One of our biggest motivations is the transformation of our clients businesses, through technology and incredible people;',
@@ -59,7 +73,7 @@ export const workExperiences: { title: string, companyName: string, img: string,
   {
     title: 'Senior Software Engineer',
     companyName: 'Texo IT',
-    img: './src/lib/images/texo-it.jpg',
+    img: texo,
     date: 'May 2022 - Jul 2023 · 1 yr 3 mos',
     points: [
       'Texo IT is an outsourcing company specialized in software development. formed by specialists in software engineering, working in all phases of the development cycle, with a strong focus on highly complex projects.',
@@ -75,7 +89,7 @@ export const workExperiences: { title: string, companyName: string, img: string,
   {
     title: 'Senior Frontend Engineer',
     companyName: 'Feracode',
-    img: './src/lib/images/feracode.png',
+    img: feracode,
     date: 'Feb 2019 - May 2022 · 3 yrs 4 mos',
     points: [
       'Feracode are a software and web developer house. We design solutions for the client increase his revenue and the scalability of his business through custom apps. The mission is to connect the world with the best brands and update the standard of online technology',
@@ -93,7 +107,7 @@ export const workExperiences: { title: string, companyName: string, img: string,
   {
     title: 'Senior Fullstack Developer(heavy frontend)',
     companyName: 'TIVIT',
-    img: './src/lib/images/tivit.jpg',
+    img: tivit,
     date: 'May 2021 - Dec 2021 · 8 mos',
     points: [
       'TIVIT is a Brazilian multinational and technology one-stop-shop, present in the market since 1998 and with operations in ten countries in Latin America. The company offers diverse services such as agile software development, hybrid and public cloud, cybersecurity, highly complex operations, among others, which support customers on their digital transformation journey.',
@@ -108,7 +122,7 @@ export const workExperiences: { title: string, companyName: string, img: string,
   {
     title: 'Software Engineer',
     companyName: 'Sysmar Informática LTDA',
-    img: './src/lib/images/sysmar.jpg',
+    img: sysmar,
     date: 'Mar 2014 - Mar 2019 · 5 yrs 1 mo',
     points: [
       'IT company that provides integrated ICT (Information and Communication Technology) solutions for Public Management, developing innovations in practices and technologies.',
@@ -198,7 +212,7 @@ export const workedProjects: { name: string, description: string, tags: {name: s
         color: 'pink-text-gradient',
       },
     ],
-    image: './src/lib/images/zellim.png',
+    image: zellim,
     projectLink: 'https://www.zellim.com/',
   },
   {
@@ -219,7 +233,7 @@ export const workedProjects: { name: string, description: string, tags: {name: s
         color: 'pink-text-gradient',
       },
     ],
-    image: './src/lib/images/onelog-brf.png',
+    image: onelog,
     projectLink: 'https://onelog.brf.com/login',
   },
   {
@@ -240,7 +254,7 @@ export const workedProjects: { name: string, description: string, tags: {name: s
         color: 'pink-text-gradient',
       },
     ],
-    image: './src/lib/images/shellbox.png',
+    image: shellbox,
     projectLink: 'https://promo.shell.com.br/shellbox/',
   },
 ]
@@ -263,7 +277,7 @@ export const studyProjects: { name: string, description: string, tags: {name: st
         color: 'pink-text-gradient',
       },
     ],
-    image: './src/lib/images/pokeapi.jpg',
+    image: pokeapi,
     projectLink: 'https://github.com/viniciusschuelter/fun-with-pokemon-api-angular',
   },
   {
@@ -283,7 +297,7 @@ export const studyProjects: { name: string, description: string, tags: {name: st
         color: 'pink-text-gradient',
       },
     ],
-    image: './src/lib/images/signals.jpg',
+    image: signals,
     projectLink: 'https://github.com/viniciusschuelter/playground-angular-signal',
   },
   {
@@ -303,7 +317,7 @@ export const studyProjects: { name: string, description: string, tags: {name: st
         color: 'pink-text-gradient',
       },
     ],
-    image: './src/lib/images/dimension-C137.jpg',
+    image: dc137,
     projectLink: 'https://github.com/viniciusschuelter/dimension-c-137',
   },
   {
@@ -323,7 +337,7 @@ export const studyProjects: { name: string, description: string, tags: {name: st
       color: 'pink-text-gradient',
     },
   ],
-  image: './src/lib/images/free-to-play.jpg',
+  image: freetoplay,
   projectLink: 'https://github.com/viniciusschuelter/free-to-play-astro',
   },
   {
@@ -343,7 +357,7 @@ export const studyProjects: { name: string, description: string, tags: {name: st
       color: 'pink-text-gradient',
     },
   ],
-  image: './src/lib/images/skateshop-vr.jpg',
+  image: skateshop,
   projectLink: 'https://github.com/viniciusschuelter/react-skateboard-vr',
   },
   {
@@ -363,7 +377,7 @@ export const studyProjects: { name: string, description: string, tags: {name: st
       color: 'pink-text-gradient',
     },
   ],
-  image: './src/lib/images/superheroes.jpg',
+  image: superheroes,
   projectLink: 'https://github.com/viniciusschuelter/superheroes',
   }
 ]
