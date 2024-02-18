@@ -5,8 +5,7 @@
 	import Stack from '../components/Stack.svelte';
 	import Project from '../components/Project.svelte';
 	import Study from '../components/Study.svelte';
-	import { Canvas } from '@threlte/core';
-	import Computer from '../canvas/Computer.svelte';
+	import Contact from '../components/Contact.svelte';
 </script>
 
 <svelte:head>
@@ -19,10 +18,4 @@
 <Stack />
 <Section Component={Project} idName="project"></Section>
 <Section Component={Study} idName="study"></Section>
-<div class="canvas-wrapper">
-	<Canvas	>
-		<Computer />
-	</Canvas>
-</div>
-<style>
-</style>
+<Section Component={Contact} idName="contact"></Section>
