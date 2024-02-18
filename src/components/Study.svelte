@@ -32,6 +32,8 @@
 					/>
 
 					<div class="absolute inset-0 flex justify-end m-3 card-img_hover">
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
+						<!-- svelte-ignore a11y-no-static-element-interactions -->
 						<div
 							on:click={() => window.open(project.projectLink, '_blank')}
 							class="gray-bg-opacity w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"

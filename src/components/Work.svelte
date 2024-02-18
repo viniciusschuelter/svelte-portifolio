@@ -25,7 +25,8 @@
 					style="background: rgb(230, 222, 221);"
 					>
 					<div class="flex justify-center items-center w-full h-full">
-						<img src="{experience.img}" class="rounded-full object-contain" />
+						<!-- svelte-ignore a11y-img-redundant-alt -->
+						<img src="{experience.img}" alt="experience image" class="rounded-full object-contain" />
 					</div>
 				</span>
 				<div
