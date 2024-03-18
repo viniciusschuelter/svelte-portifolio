@@ -15,7 +15,7 @@
 
 <Section Component={About} idName="about"></Section>
 <Section Component={Work} idName="work"></Section>
-<Stack />
+<!-- <Stack /> -->
 <Section Component={Project} idName="project"></Section>
 <Section Component={Study} idName="study"></Section>
 <Section Component={Contact} idName="contact"></Section>
