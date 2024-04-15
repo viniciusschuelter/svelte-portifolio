@@ -2,23 +2,33 @@
 	import { workExperiences } from "../constants/info";
 	import { fadeIn, textVariant, zoomIn } from "../utils/motion";
 
+	let width = 0
 	let delay: number = 0.1
 	let duration: number = 1
 	let direction = (index: number) => index % 2 === 0 ? 'right' : 'left'
+	
+	function fadeInConditional(el: any, options: any) {
+		setTimeout( () => {
+			if (width <= 500) return
+			return fadeIn(el, options)
+		}, 100)
+	}
 </script>
 
+<svelte:window bind:innerWidth={width} />
 <div use:textVariant style="opacity: 1; transform: none;">
 	<p class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
 		What I have done so far
 	</p>
 	<h2 class="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
 		Work Experience.
+		{width}
 	</h2>
 </div>
-<div class="mt-20 flex flex-col">
-	<div class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
+<div class="mt-20 flex flex-col w-full">
+	<div class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns flex flex-col w-full">
 		{#each workExperiences as experience, index}	
-			<div use:fadeIn={{ delay, duration,  direction: direction(index) }} id="" class="vertical-timeline-element">
+			<div use:fadeInConditional={{ delay, duration,  direction: direction(index) }} id="" class="vertical-timeline-element">
 				<span
 					use:zoomIn={0.1}
 					class="vertical-timeline-element-icon"

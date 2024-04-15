@@ -27,7 +27,7 @@
 </p>
 <div class="mt-20 flex flex-wrap gap-10">
 	{#each mainlySkills as skill, index}
-		<div class="xs:w-[250px]" use:tilt={initialSettings}>
+		<div class="sm:w-[250px] w-full" use:tilt={initialSettings}>
 			<div
 				use:fadeIn={{delay: index * 0.5, duration: 1, direction: 'right'}}
 				class="w-full orange-pink-gradient p-[1px] rounded-[20px] shadow-card"

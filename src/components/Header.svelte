@@ -5,6 +5,7 @@
 	import menu from '../lib/icons/menu.svg';
 	
 	let y = 0
+	let openedMenu = false
 </script>
 
 <header>
@@ -24,9 +25,9 @@
 					</li>
 				{/each}
 			</ul>
-			<div class="sm:hidden flex flex-1 justify-end items-center">
+			<div class="sm:hidden flex flex-1 justify-end items-center" on:click={() => openedMenu = !openedMenu}>
 				<img src={menu} alt="menu" class="w-[28px] h-[28px] object-contain cursor-pointer" />
-				<div class="hidden p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl">
+				<div class="p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl { !openedMenu && "hidden" }">
 					<ul class="list-none flex justify-end items-start flex-col gap-4">
 						{#each navLinks as link}
 							<li class="text-secondary font-poppins font-medium cursor-pointer text-[16px]">

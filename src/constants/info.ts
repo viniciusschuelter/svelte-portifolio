@@ -52,7 +52,10 @@ export const mainlySkills: { name: string, img: string}[] = [
     { name: 'Angular Specialist', img: '' },
     { name: 'Frontend Developer', img: '' },
     { name: 'Backend Developer', img: '' },
+    { name: 'Decade of Experience', img: '' },
     { name: 'Javascript Frameworks', img: '' },
+    { name: 'Micro Front/Services', img: '' },
+    { name: 'Seveless AWS/Google', img: '' },
 ];
 
 export const workExperiences: { title: string, companyName: string, img: string, date: string, points: string[]}[] = [
