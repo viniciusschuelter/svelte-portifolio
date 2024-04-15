@@ -22,7 +22,6 @@
 	</p>
 	<h2 class="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
 		Work Experience.
-		{width}
 	</h2>
 </div>
 <div class="mt-20 flex flex-col w-full">

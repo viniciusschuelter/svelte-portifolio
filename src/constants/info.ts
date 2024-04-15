@@ -45,7 +45,15 @@ export const personalInfo: { name: string, fullName: string, occupation: string,
     links to code repositories and live demos in it. It reflects my
     ability to solve complex problems, work with different technologies,
     and manage projects effectively.`
-} 
+}
+
+export const socialMedias: { name: string, type: string, link: string }[] = [
+  { name: 'Linkedin', type: 'linkedin', link: 'https://www.linkedin.com/in/vinicius-schuelter'},
+  { name: 'Github', type: 'github', link: 'https://github.com/viniciusschuelter' },
+  { name: 'Instagram', type: 'instagram', link: 'https://www.instagram.com/vinilona182/' },
+  { name: 'Google', type: 'google', link: 'mailto:viniciusschuelter@gmail.com' },
+  { name: 'Medium', type: 'medium', link: 'https://medium.com/@viniciusschuelter' },
+];
 
 export const mainlySkills: { name: string, img: string}[] = [
     { name: 'Coder Passionate', img: '' },
