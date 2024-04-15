@@ -60,7 +60,7 @@
 	};
 </script>
 
-<div class={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
+<div class={`xl:mt-12 flex xl:flex-row flex-col gap-10 overflow-hidden`}>
 	<div
 		use:fadeIn={{ delay: 0.5, duration: 1, direction: 'right' }}
 		class="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -136,7 +136,7 @@
 				<li class="flex items-center pt-1">
 					{#if media.type === 'facebook'}
 						<a
-							href="#!"
+							href={media.link}
 							type="button"
 							class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1"
 							><svg
@@ -156,7 +156,7 @@
 						>
 					{:else if media.type === 'twitter'}
 						<a
-							href="#!"
+							href={media.link}
 							type="button"
 							class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1"
 							><svg
@@ -176,7 +176,7 @@
 						>
 					{:else if media.type === 'google'}
 						<a
-							href="#!"
+							href={media.link}
 							type="button"
 							class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1"
 							><svg
@@ -196,7 +196,7 @@
 						>
 					{:else if media.type === 'instagram'}
 						<a
-							href="#!"
+							href={media.link}
 							type="button"
 							class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1"
 							><svg
@@ -216,7 +216,7 @@
 						>
 					{:else if media.type === 'linkedin'}
 						<a
-							href="#!"
+							href={media.link}
 							type="button"
 							class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1"
 							><svg
@@ -236,7 +236,7 @@
 						>
 					{:else if media.type === 'github'}
 						<a
-							href="#!"
+							href={media.link}
 							type="button"
 							class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1"
 							><svg
@@ -256,7 +256,7 @@
 						>
 					{:else}
 						<a
-							href="#!"
+							href={media.link}
 							type="button"
 							class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1 flex justify-center items-center"
 						>
