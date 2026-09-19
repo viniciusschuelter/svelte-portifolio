@@ -1,6 +1,6 @@
 <script lang="ts">
 	import tilt from '../utils/tilt';
-	import { mainlySkills, personalInfo } from '../constants/info';
+	import { mainSkills, personalInfo } from '../constants/info';
 	import { textVariant, fadeIn } from '../utils/motion';
 	import image1 from '../lib/images/0.png';
 	import image2 from '../lib/images/1.png';
@@ -26,7 +26,7 @@
 	{@html personalInfo.overview}
 </p>
 <div class="mt-20 flex flex-wrap gap-10">
-	{#each mainlySkills as skill, index}
+	{#each mainSkills as skill, index}
 		<div class="sm:w-[250px] w-full" use:tilt={initialSettings}>
 			<div
 				use:fadeIn={{delay: index * 0.5, duration: 1, direction: 'right'}}

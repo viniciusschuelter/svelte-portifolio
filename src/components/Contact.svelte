@@ -1,9 +1,10 @@
 <script lang="ts">
-	import Earth from '../canvas/Earth.svelte';
+	// import Earth from '../canvas/Earth.svelte';
 	import { socialMedias } from '../constants/info';
 	import { fadeIn, textVariant } from '../utils/motion';
 	import emailjs from '@emailjs/browser';
-
+	// import { Canvas } from "@threlte/core";
+	
 	emailjs.init({ publicKey: atob('Rmo3YWtKX2tJUlM2MXY1Z2I=') });
 
 	let form = {
@@ -28,16 +29,16 @@
 
 		emailjs
 			.send(
-				atob('c2VydmljZV9ncnRxMnR6'),
-				atob('dGVtcGxhdGVfbHQyaHQzcQ=='),
+				atob('c2VydmljZV9jdWI0eDRm'),
+				atob('dGVtcGxhdGVfMnk5eHZlNg=='),
 				{
-					from_name: form.name,
+					name: form.name,
+					email: form.email,
+					message: form.message,
 					to_name: 'Vinicius Schuelter',
-					from_email: form.email,
 					to_email: 'viniciusschuelter@gmail.com',
-					message: form.message
 				},
-				atob('Rmo3YWtKX2tJUlM2MXY1Z2I=')
+				atob('NG1tUUl0STZTU1Viek9pbFA=')
 			)
 			.then(
 				() => {
@@ -120,7 +121,9 @@
 		use:fadeIn={{ delay: 0.5, duration: 1, direction: 'left' }}
 		class="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] flex flex-col justify-center items-center"
 	>
-		<!-- <Earth /> -->
+	<!-- <Canvas>
+		<Earth />
+	</Canvas> -->
 		<div class="relative flex center mr-3 mr-md-0 flex-shrink-0">
 			<img
 				style="height:auto;"

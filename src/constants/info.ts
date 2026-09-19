@@ -25,6 +25,8 @@ import dc137 from '../lib/images/dimension-c137.jpg'
 import freetoplay from '../lib/images/free-to-play.jpg'
 import skateshop from '../lib/images/skateshop-vr.jpg'
 import superheroes from '../lib/images/superheroes.jpg'
+import outsera from '../lib/images/outsera.jpg'
+import cresol from '../lib/images/cresol.jpg'
 
 
 export const personalInfo: { name: string, fullName: string, occupation: string, bio: string, overview: string, projectsOverview: string, studyOverview: string  } = {
@@ -55,7 +57,7 @@ export const socialMedias: { name: string, type: string, link: string }[] = [
   { name: 'Medium', type: 'medium', link: 'https://medium.com/@viniciusschuelter' },
 ];
 
-export const mainlySkills: { name: string, img: string}[] = [
+export const mainSkills: { name: string, img: string}[] = [
     { name: 'Coder Passionate', img: '' },
     { name: 'Angular Specialist', img: '' },
     { name: 'Frontend Developer', img: '' },
@@ -68,13 +70,40 @@ export const mainlySkills: { name: string, img: string}[] = [
 
 export const workExperiences: { title: string, companyName: string, img: string, date: string, points: string[]}[] = [
   {
+    title: 'Senior Frontend Engineer',
+    companyName: 'Cresol',
+    img: cresol,
+    date: 'Oct 2026 - Present',
+    points: [
+      'A credit union that delivers excellent financial solutions through relationship-based service. It offers a full range of financial services—including checking accounts, investments, cards, insurance, consortium plans, and credit—with a focus on close relationships and community development.;',
+      'Developing and maintaining AWS lambda`s using mainly Node.js, dynamoDB, MySQL and terraform pipeline;',
+      'Collaborating with cross-functional teams, product managers, and other developers to create high-quality products;',
+      'Participating in code reviews and providing constructive feedback to other developers;',
+      'Skills: Next.js · React · Typscript · Tailwind · Node.js · Vitest · Docker',
+    ],
+  },
+  {
+    title: 'Senior Frontend Engineer',
+    companyName: 'Outsera',
+    img: outsera,
+    date: 'Set 2024 - Oct 2026',
+    points: [
+      'Outsera specializes in outsourcing senior professionals for all stages of software development. We provide IT professional outsourcing services to transform complex client needs into productive, high-quality solutions;',
+      'Allocated at Cresol credit union, development and maintenance of Internet Banking;',
+      'Developing and maintaining AWS lambda`s using mainly Node.js, dynamoDB, MySQL and terraform pipeline;',
+      'Collaborating with cross-functional teams, product managers, and other developers to create high-quality products;',
+      'Participating in code reviews and providing constructive feedback to other developers;',
+      'Skills: Next.js · React · Typscript · Tailwind · Node.js · Vitest · Docker',
+    ],
+  },
+  {
     title: 'Senior Fullstack Developer(heavy backend)',
     companyName: 'AP Digital Services',
     img: ap,
-    date: 'Oct 2023 - Present',
+    date: 'Oct 2023 - Set 2024',
     points: [
       'AP Digital Services was born in 2015 with the concern and desire to put theto be human as a central point ofexperiences digital. One of our biggest motivations is the transformation of our clients businesses, through technology and incredible people;',
-      'Allocated in the Raizen/Shell, development and maintenance of AWS serveles;s',
+      'Allocated at Raizen/Shell, development and maintenance of AWS serveles;',
       'Developing and maintaining AWS lambda`s using mainly Node.js, dynamoDB, MySQL and terraform pipeline;',
       'Collaborating with cross-functional teams, product managers, and other developers to create high-quality products;',
       'Participating in code reviews and providing constructive feedback to other developers;',
@@ -88,8 +117,8 @@ export const workExperiences: { title: string, companyName: string, img: string,
     date: 'May 2022 - Jul 2023 · 1 yr 3 mos',
     points: [
       'Texo IT is an outsourcing company specialized in software development. formed by specialists in software engineering, working in all phases of the development cycle, with a strong focus on highly complex projects.',
-      'Allocated in the TOTVS client, development and maintenance of Scheduling/YMS system, focusing on cargo management (1 year)',
-      'Allocated in the TOTVS client, development and maintenance of the Collector mobile application, focusing on service order management (3 months)',
+      'Allocated at TOTVS client, development and maintenance of Scheduling/YMS system, focusing on cargo management (1 year)',
+      'Allocated at TOTVS client, development and maintenance of the Collector mobile application, focusing on service order management (3 months)',
       'Developing and maintaining web/mobile applications using mainly Angular 12+, Java 11, Ionic 5  and other related technologies;',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products;',
       'Implementing responsive design and ensuring cross-browser compatibility;',

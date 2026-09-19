@@ -1,8 +1,6 @@
 <script lang="ts">
-    import { forwardEventHandlers, T, useThrelte } from '@threlte/core';
-    import { DecalGeometry } from "three/examples/jsm/geometries/DecalGeometry";
+    import { T } from '@threlte/core';
 	import { useTexture, Float } from '@threlte/extras';
-    import * as THREE from "three";
     import Decal  from './Decal.svelte'
 
     export let decal: any = null;

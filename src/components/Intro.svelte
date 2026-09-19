@@ -29,7 +29,7 @@
 		</div>
 	</div>
 
-	<Canvas	>
+	<Canvas>
 		<Computer />
 	</Canvas>
 
