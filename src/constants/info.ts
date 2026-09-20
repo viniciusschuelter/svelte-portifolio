@@ -25,8 +25,8 @@ import dc137 from '../lib/images/dimension-c137.jpg'
 import freetoplay from '../lib/images/free-to-play.jpg'
 import skateshop from '../lib/images/skateshop-vr.jpg'
 import superheroes from '../lib/images/superheroes.jpg'
-import outsera from '../lib/images/outsera.jpg'
-import cresol from '../lib/images/cresol.jpg'
+import outsera from '../lib/images/outsera.jpeg'
+import cresol from '../lib/images/cresol.png'
 
 
 export const personalInfo: { name: string, fullName: string, occupation: string, bio: string, overview: string, projectsOverview: string, studyOverview: string  } = {
@@ -76,7 +76,7 @@ export const workExperiences: { title: string, companyName: string, img: string,
     date: 'Oct 2026 - Present',
     points: [
       'A credit union that delivers excellent financial solutions through relationship-based service. It offers a full range of financial services—including checking accounts, investments, cards, insurance, consortium plans, and credit—with a focus on close relationships and community development.;',
-      'Developing and maintaining AWS lambda`s using mainly Node.js, dynamoDB, MySQL and terraform pipeline;',
+      'Development and maintenance of web applications using primarily Next.js/React, Tailwind, and Node.js;',
       'Collaborating with cross-functional teams, product managers, and other developers to create high-quality products;',
       'Participating in code reviews and providing constructive feedback to other developers;',
       'Skills: Next.js · React · Typscript · Tailwind · Node.js · Vitest · Docker',
@@ -90,7 +90,7 @@ export const workExperiences: { title: string, companyName: string, img: string,
     points: [
       'Outsera specializes in outsourcing senior professionals for all stages of software development. We provide IT professional outsourcing services to transform complex client needs into productive, high-quality solutions;',
       'Allocated at Cresol credit union, development and maintenance of Internet Banking;',
-      'Developing and maintaining AWS lambda`s using mainly Node.js, dynamoDB, MySQL and terraform pipeline;',
+      'Development and maintenance of web applications using primarily Next.js/React, Tailwind, and Node.js;',
       'Collaborating with cross-functional teams, product managers, and other developers to create high-quality products;',
       'Participating in code reviews and providing constructive feedback to other developers;',
       'Skills: Next.js · React · Typscript · Tailwind · Node.js · Vitest · Docker',
